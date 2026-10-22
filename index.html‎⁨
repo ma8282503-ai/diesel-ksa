@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة توريد وتوصيل الديزل | المملكة العربية السعودية</title>
+    <meta name="description" content="شركة متخصصة في توريد وتوصيل وتوزيع الديزل لجميع مناطق المملكة العربية السعودية. توصيل ديزل للمولدات، الكسارات، والمصانع على مدار الساعة.">
+    <meta name="keywords" content="توصيل ديزل, توريد ديزل, توزيع ديزل, ديزل الرياض, ديزل جدة, ديزل للمولدات, وايت ديزل, Diesel Delivery Saudi Arabia">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#fbf9f0',
+                            100: '#f5efd6',
+                            200: '#ebdcae',
+                            300: '#dec27c',
+                            400: '#d1a44e',
+                            500: '#b8860b',
+                            600: '#a36d07',
+                            700: '#82500c',
+                            800: '#6d4012',
+                            900: '#5c3515',
+                        },
+                        whatsapp: '#25D366'
+                    },
+                    fontFamily: {
+                        arabic: ['Tajawal', 'sans-serif'],
+                        english: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Tajawal', sans-serif; background-color: #ffffff; color: #1f2937; }
+        body.lang-en { font-family: 'Inter', sans-serif; }
+        .gold-gradient { background: linear-gradient(135deg, #d1a44e 0%, #b8860b 100%); }
+        .gold-border { border-color: #d1a44e; }
+        .gold-card { background: #fbf9f0; border: 2px solid #ebdcae; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased" id="body-tag">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-gray-900 text-white py-2.5 px-4 text-xs md:text-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <a href="tel:+966579309690" class="flex items-center gap-1.5 hover:text-gold-400 transition">
+                    <i class="fas fa-phone-alt text-gold-400"></i>
+                    <span dir="ltr">+966 57 930 9690</span>
+                </a>
+                <span class="hidden md:inline text-gray-600">|</span>
+                <div class="hidden md:flex items-center gap-1.5 text-gray-300">
+                    <i class="fas fa-clock text-gold-400"></i>
+                    <span data-i18n="top_service">خدمة متواصلة 24/7 في جميع مناطق المملكة</span>
+                </div>
+            </div>
+            
+            <button onclick="toggleLanguage()" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-3 py-1 rounded-full text-xs font-bold transition border border-gray-700">
+                <i class="fas fa-globe text-gold-400"></i>
+                <span id="lang-btn-text">English</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center text-white font-extrabold text-xl shadow-md">
+                    <i class="fas fa-gas-pump"></i>
+                </div>
+                <div>
+                    <span class="text-xl md:text-2xl font-black text-gray-900 tracking-tight block leading-none" data-i18n="brand_name">شركة توصيل وتوريد الديزل</span>
+                    <span class="text-xs text-gold-600 font-bold block mt-1" data-i18n="brand_tagline">الخيار الأول للوقود بالمملكة</span>
+                </div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8 font-bold text-gray-700 text-sm">
+                <a href="#about" class="hover:text-gold-600 transition" data-i18n="nav_about">عن الشركة</a>
+                <a href="#services" class="hover:text-gold-600 transition" data-i18n="nav_services">خدماتنا</a>
+                <a href="#coverage" class="hover:text-gold-600 transition" data-i18n="nav_coverage">مناطق التغطية</a>
+                <a href="#calculator" class="hover:text-gold-600 transition" data-i18n="nav_calculator">حاسبة الطلب</a>
+                <a href="#partners" class="hover:text-gold-600 transition" data-i18n="nav_partners">شركاء النجاح</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/966579309690" target="_blank" class="hidden sm:flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-300 hover:bg-emerald-100 px-4 py-2 rounded-xl text-sm font-bold transition shadow-sm">
+                    <i class="fab fa-whatsapp text-emerald-600 text-lg"></i>
+                    <span data-i18n="btn_whatsapp">واتساب مباشر</span>
+                </a>
+                <a href="tel:+966579309690" class="gold-gradient text-white px-5 py-2.5 rounded-xl text-sm font-bold shadow-md hover:opacity-90 transition flex items-center gap-2">
+                    <i class="fas fa-phone-alt"></i>
+                    <span data-i18n="btn_call">اتصال فوري</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-gray-50 to-white py-12 md:py-20 overflow-hidden border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-gold-100 border border-gold-300 px-3 py-1.5 rounded-full text-gold-800 text-xs md:text-sm font-bold">
+                        <i class="fas fa-shield-alt text-gold-600"></i>
+                        <span data-i18n="hero_badge">تغطية شاملة 100% لكافة مناطق المملكة</span>
+                    </div>
+
+                    <h1 class="text-3xl md:text-5xl font-black text-gray-900 leading-tight" data-i18n="hero_title">
+                        شركة توريد وتوصيل وتوزيع الديزل للمصانع والمشاريع
+                    </h1>
+
+                    <p class="text-base md:text-lg text-gray-600 leading-relaxed font-medium" data-i18n="hero_subtitle">
+                        نضمن لك الحصول على وقود الديزل عالي الجودة بالمواصفات المعتمدة بأسرع وقت وأعلى درجات الأمان. أسطول مجهز بصهاريج حديثة وعدادات معايرة بدقة لتلبية احتياجات الشركات، الكسارات، والمولدات.
+                    </p>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/966579309690?text=السلام%20عليكم،%20أرغب%20في%20طلب%20توصيل%20ديزل" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl text-base font-bold text-center flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transition">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span data-i18n="hero_cta_wa">اطلب عبر الواتساب الآن</span>
+                        </a>
+                        <a href="tel:+966579309690" class="gold-card hover:bg-gold-100 text-gold-900 px-6 py-3.5 rounded-xl text-base font-bold text-center flex items-center justify-center gap-2 transition">
+                            <i class="fas fa-headset text-gold-700"></i>
+                            <span data-i18n="hero_cta_call">اتصل بمشرف التوصيل</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-gold-200">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000" alt="شاحنة صهريج نقل وتوزيع الديزل" class="w-full h-[320px] md:h-[420px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-600 font-bold text-sm tracking-widest uppercase" data-i18n="services_sub font-bold">خدماتنا الاحترافية</span>
+                <h2 class="text-2xl md:text-4xl font-black text-gray-900 mt-2" data-i18n="services_title">حلول متكاملة لتوريد وتوزيع الديزل</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="gold-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&q=80&w=600" alt="توصيل ديزل للمصانع والشركات" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="s1_title">توصيل ديزل للمصانع والمواقع</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="s1_desc">توريد الكميات الكبيرة والمخصصة للمصانع والمنشآت الحيوية بجدولة دقيقة تضمن عدم توقف أعمالك.</p>
+                    </div>
+                </div>
+
+                <div class="gold-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600" alt="تعبئة المولدات والكسارات" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="s2_title">تعبئة المولدات والكسارات</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="s2_desc">تزويد المولدات الكهربائية والمعدات الثقيلة في مواقع المقاولات والكسارات بالوقود بسرعة وكفاءة.</p>
+                    </div>
+                </div>
+
+                <div class="gold-card rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=600" alt="عدادات ذكية وتوريد فوري" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2" data-i18n="s3_title">صهاريج مزودة بعدادات ذكية</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed" data-i18n="s3_desc">نستخدم صهاريج نقل حديثة مجهزة بعدادات معايرة لضمان دقة الكمية الموردة بكل شفافية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="py-16 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="gold-card p-8 md:p-10 rounded-3xl shadow-lg">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-black text-gray-900" data-i18n="calc_title">حاسبة طلب الديزل والتقدير السريع</h2>
+                    <p class="text-gray-600 text-sm mt-2" data-i18n="calc_subtitle">حدد الكمية المطلوبة باللتر لتحديد الصهريج المناسب فوراً</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-gray-800 mb-2" data-i18n="calc_label_qty">الكمية المطلوبة (باللتر):</label>
+                        <input type="number" id="dieselQty" value="10000" step="500" min="1000" oninput="calculateDiesel()" class="w-full px-4 py-3 rounded-xl border border-gold-300 focus:outline-none focus:ring-2 focus:ring-gold-500 font-bold text-lg text-gray-900">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-xl border border-gold-200">
+                            <span class="text-xs text-gray-500 font-bold block" data-i18n="calc_truck_type">نوع الصهريج المقترح:</span>
+                            <span id="truckType" class="text-lg font-black text-gold-700 mt-1 block">صهريج متوسط</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-gold-200">
+                            <span class="text-xs text-gray-500 font-bold block" data-i18n="calc_est_time">وقت التوصيل التقديري:</span>
+                            <span id="deliveryTime" class="text-lg font-black text-gray-900 mt-1 block">خلال 2-4 ساعات</span>
+                        </div>
+                    </div>
+
+                    <button onclick="sendCalculatedOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl text-lg flex items-center justify-center gap-3 shadow-md transition">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span data-i18n="calc_send_btn">تأكيد الطلب والحصول على السعر عبر الواتساب</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-black text-gray-900 mb-8" data-i18n="partners_title">شركاء النجاح والثقة</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center justify-center gap-2">
+                    <i class="fas fa-building text-3xl text-gold-600"></i>
+                    <span class="font-bold text-gray-800 text-sm" data-i18n="p1">شركة المقاولات الكبرى</span>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center justify-center gap-2">
+                    <i class="fas fa-industry text-3xl text-gold-600"></i>
+                    <span class="font-bold text-gray-800 text-sm" data-i18n="p2">مجموعة المصانع الوطنية</span>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center justify-center gap-2">
+                    <i class="fas fa-mountain text-3xl text-gold-600"></i>
+                    <span class="font-bold text-gray-800 text-sm" data-i18n="p3">شركة التعدين والكسارات</span>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col items-center justify-center gap-2">
+                    <i class="fas fa-truck-moving text-3xl text-gold-600"></i>
+                    <span class="font-bold text-gray-800 text-sm" data-i18n="p4">شركة النقل والخدمات اللوجستية</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h3 class="text-2xl font-black" data-i18n="brand_name">شركة توصيل وتوريد الديزل</h3>
+            <p class="text-gray-400 text-sm max-w-xl mx-auto" data-i18n="footer_desc">خدمات توريد وتوزيع الديزل بجميع أنحاء المملكة العربية السعودية. جودة عالية وسرعة في التنفيذ.</p>
+            <div class="flex justify-center gap-4 text-xl">
+                <a href="tel:+966579309690" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gold-400 hover:bg-gold-500 hover:text-white transition"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/966579309690" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="text-xs text-gray-500">© 2026 جميع الحقوق محفوظة - شركة توريد وتوصيل الديزل</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/966579309690" target="_blank" class="fixed bottom-6 left-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition hover:scale-110">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Translation Script -->
+    <script>
+        const i18n = {
+            ar: {
+                top_service: "خدمة متواصلة 24/7 في جميع مناطق المملكة",
+                brand_name: "شركة توصيل وتوريد الديزل",
+                brand_tagline: "الخيار الأول للوقود بالمملكة",
+                nav_about: "عن الشركة",
+                nav_services: "خدماتنا",
+                nav_coverage: "مناطق التغطية",
+                nav_calculator: "حاسبة الطلب",
+                nav_partners: "شركاء النجاح",
+                btn_whatsapp: "واتساب مباشر",
+                btn_call: "اتصال فوري",
+                hero_badge: "تغطية شاملة 100% لكافة مناطق المملكة",
+                hero_title: "شركة توريد وتوصيل وتوزيع الديزل للمصانع والمشاريع",
+                hero_subtitle: "نضمن لك الحصول على وقود الديزل عالي الجودة بالمواصفات المعتمدة بأسرع وقت وأعلى درجات الأمان. أسطول مجهز بصهاريج حديثة وعدادات معايرة بدقة لتلبية احتياجات الشركات، الكسارات، والمولدات.",
+                hero_cta_wa: "اطلب عبر الواتساب الآن",
+                hero_cta_call: "اتصل بمشرف التوصيل",
+                services_sub: "خدماتنا الاحترافية",
+                services_title: "حلول متكاملة لتوريد وتوزيع الديزل",
+                s1_title: "توصيل ديزل للمصانع والموقع",
+                s1_desc: "توريد الكميات الكبيرة والمخصصة للمصانع والمنشآت الحيوية بجدولة دقيقة تضمن عدم توقف أعمالك.",
+                s2_title: "تعبئة المولدات والكسارات",
+                s2_desc: "تزويد المولدات الكهربائية والمعدات الثقيلة في مواقع المقاولات والكسارات بالوقود بسرعة وكفاءة.",
+                s3_title: "صهاريج مزودة بعدادات ذكية",
+                s3_desc: "نستخدم صهاريج نقل حديثة مجهزة بعدادات معايرة لضمان دقة الكمية الموردة بكل شفافية.",
+                calc_title: "حاسبة طلب الديزل والتقدير السريع",
+                calc_subtitle: "حدد الكمية المطلوبة باللتر لتحديد الصهريج المناسب فوراً",
+                calc_label_qty: "الكمية المطلوبة (باللتر):",
+                calc_truck_type: "نوع الصهريج المقترح:",
+                calc_est_time: "وقت التوصيل التقديري:",
+                calc_send_btn: "تأكيد الطلب والحصول على السعر عبر الواتساب",
+                partners_title: "شركاء النجاح والثقة",
+                p1: "شركة المقاولات الكبرى",
+                p2: "مجموعة المصانع الوطنية",
+                p3: "شركة التعدين والكسارات",
+                p4: "شركة النقل والخدمات اللوجستية",
+                footer_desc: "خدمات توريد وتوزيع الديزل بجميع أنحاء المملكة العربية السعودية. جودة عالية وسرعة في التنفيذ."
+            },
+            en: {
+                top_service: "Continuous 24/7 Service Across All KSA Regions",
+                brand_name: "Diesel Supply & Delivery Co.",
+                brand_tagline: "Premier Fuel Partner in KSA",
+                nav_about: "About Us",
+                nav_services: "Services",
+                nav_coverage: "Coverage",
+                nav_calculator: "Calculator",
+                nav_partners: "Partners",
+                btn_whatsapp: "Direct WhatsApp",
+                btn_call: "Call Now",
+                hero_badge: "100% Full Nationwide KSA Coverage",
+                hero_title: "Saudi Diesel Supply, Delivery & Distribution Company",
+                hero_subtitle: "Guaranteed top-quality certified diesel delivered safely and rapidly. Equipped with modern tanker fleets and precision meters for factories, quarries, and generators.",
+                hero_cta_wa: "Order via WhatsApp Now",
+                hero_cta_call: "Call Dispatch Supervisor",
+                services_sub: "Professional Services",
+                services_title: "Complete Diesel Supply & Distribution Solutions",
+                s1_title: "Factory & Site Delivery",
+                s1_desc: "Bulk diesel supply for factories and essential facilities with precise scheduling.",
+                s2_title: "Generators & Quarries Fueling",
+                s2_desc: "Fast refueling for power generators and heavy machinery at construction sites.",
+                s3_title: "Smart Metered Tankers",
+                s3_desc: "Modern tanker trucks equipped with calibrated meters to guarantee exact quantities.",
+                calc_title: "Diesel Order Estimator",
+                calc_subtitle: "Select your desired volume in liters for instant vehicle allocation",
+                calc_label_qty: "Required Quantity (Liters):",
+                calc_truck_type: "Suggested Tanker:",
+                calc_est_time: "Est. Delivery Time:",
+                calc_send_btn: "Confirm & Request Price on WhatsApp",
+                partners_title: "Success Partners",
+                p1: "Major Contracting Co.",
+                p2: "National Industrial Group",
+                p3: "Mining & Quarries Corp.",
+                p4: "Logistics Fleet Co.",
+                footer_desc: "Diesel supply and delivery across Saudi Arabia. High quality and swift execution."
+            }
+        };
+
+        let currentLang = 'ar';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'en' : 'ar';
+            const body = document.getElementById('body-tag');
+            const langBtnText = document.getElementById('lang-btn-text');
+
+            if (currentLang === 'en') {
+                body.setAttribute('dir', 'ltr');
+                body.classList.add('lang-en');
+                langBtnText.innerText = 'عربي';
+            } else {
+                body.setAttribute('dir', 'rtl');
+                body.classList.remove('lang-en');
+                langBtnText.innerText = 'English';
+            }
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[currentLang][key]) {
+                    el.innerText = i18n[currentLang][key];
+                }
+            });
+
+            calculateDiesel();
+        }
+
+        function calculateDiesel() {
+            const qty = parseInt(document.getElementById('dieselQty').value) || 0;
+            const truckEl = document.getElementById('truckType');
+            const timeEl = document.getElementById('deliveryTime');
+
+            if (qty < 5000) {
+                truckEl.innerText = currentLang === 'ar' ? 'صهريج صغير (دینا)' : 'Small Tanker Truck';
+                timeEl.innerText = currentLang === 'ar' ? 'خلال 1 - 2 ساعة' : 'Within 1 - 2 Hours';
+            } else if (qty <= 18000) {
+                truckEl.innerText = currentLang === 'ar' ? 'صهريج متوسط (سكس)' : 'Medium Tanker Truck';
+                timeEl.innerText = currentLang === 'ar' ? 'خلال 2 - 4 ساعات' : 'Within 2 - 4 Hours';
+            } else {
+                truckEl.innerText = currentLang === 'ar' ? 'صهريج كبير (تريلا)' : 'Heavy Trailer Tanker';
+                timeEl.innerText = currentLang === 'ar' ? 'توصيل فوري / مجدول' : 'Instant / Scheduled';
+            }
+        }
+
+        function sendCalculatedOrder() {
+            const qty = document.getElementById('dieselQty').value;
+            const msg = `السلام عليكم، أرغب في طلب توريد ديزل بكمية: ${qty} لتر. أرجو تزويدي بالسعر وتأكيد الموعد.`;
+            window.open(`https://wa.me/966579309690?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
